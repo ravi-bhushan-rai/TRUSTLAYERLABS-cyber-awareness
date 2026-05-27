@@ -47,7 +47,7 @@ import AwarenessSocialMedia from './pages/awareness/SocialMedia';
 import AwarenessDeepfake from './pages/awareness/Deepfake';
 import AwarenessIdentityTheft from './pages/awareness/IdentityTheft';
 import AwarenessPasswordMfa from './pages/awareness/PasswordMfa';
-import Reporting from './pages/reporting';
+import IncidentReporting from './pages/incident reporting guidance/incidentreporting';
 import UrlScannerPage from "./pages/url-scanner";
 import ThreatFeedPage from "./pages/threat-feed";
 import IPScannerPage from "./pages/ip-scanner";
@@ -118,7 +118,7 @@ export default function App() {
             <Route path="/upi/demo" element={<UPIDemo />} />
             <Route path="/upi/report" element={<UPIReport />} />
 
-            <Route path="/reporting" element={<Reporting />} />
+            <Route path="/reporting" element={<IncidentReporting />} />
 
             <Route path="/laws" element={<Laws />} />
             <Route path="/laws/dashboard" element={<Laws />} />

@@ -976,7 +976,7 @@ function MainPage({ onNavigate }: MainPageProps) {
 
   return (
     <div>
-      <div style={{ textAlign: 'center', padding: '60px 0 50px', position: 'relative' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '60px 0 50px', position: 'relative' }}>
         <div
           style={{
             position: 'absolute',
@@ -1099,40 +1099,7 @@ function MainPage({ onNavigate }: MainPageProps) {
         ))}
       </div>
 
-      <div
-        style={{
-          background: `linear-gradient(135deg, ${colors.red400}15, ${colors.orange500}10)`,
-          border: `1px solid ${colors.red400}30`,
-          borderRadius: 16,
-          padding: '22px 28px',
-          display: 'flex',
-          alignItems: 'center',
-          gap: 20,
-        }}
-      >
-        <div style={{ fontSize: 36 }}>🚨</div>
-        <div style={{ flex: 1 }}>
-          <div style={{ fontFamily: font, fontWeight: 700, fontSize: 16, color: colors.red400, marginBottom: 4 }}>Experiencing a Cybercrime Right Now?</div>
-          <p style={{ fontFamily: font, fontSize: 13, color: colors.textSecondary }}>
-            Call <strong style={{ color: colors.cyan400 }}>1930</strong> (National Cybercrime Helpline) immediately. Available 24/7. For financial fraud, also call your bank to freeze your account.
-          </p>
-        </div>
-        <div
-          style={{
-            background: colors.red400,
-            color: '#020617',
-            fontFamily: font,
-            fontWeight: 800,
-            fontSize: 22,
-            padding: '10px 20px',
-            borderRadius: 10,
-            letterSpacing: '0.02em',
-            flexShrink: 0,
-          }}
-        >
-          1930
-        </div>
-      </div>
+      {/* Emergency banner removed per request */}
     </div>
   );
 }
@@ -1148,74 +1115,10 @@ export default function App() {
     evidence: <EvidencePage onBack={() => setPage('home')} />,
   };
 
-  const navLinks: Array<{ id: PageId; label: string }> = [
-    { id: 'home', label: 'Overview' },
-    { id: 'steps', label: 'Reporting Steps' },
-    { id: 'helpline', label: 'Helplines' },
-    { id: 'portal', label: 'Portal Guide' },
-    { id: 'evidence', label: 'Evidence' },
-  ];
-
   return (
     <>
       <style>{globalStyle}</style>
       <div style={{ minHeight: '100vh', background: colors.bg950, fontFamily: font }}>
-        <nav
-          style={{
-            background: `${colors.bg900}ee`,
-            borderBottom: `1px solid ${colors.bg800}`,
-            backdropFilter: 'blur(12px)',
-            position: 'sticky',
-            top: 0,
-            zIndex: 100,
-            padding: '0 32px',
-          }}
-        >
-          <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 60 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-              <div
-                style={{
-                  width: 32,
-                  height: 32,
-                  borderRadius: 8,
-                  background: `${colors.cyan400}22`,
-                  border: `1.5px solid ${colors.cyan400}`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: 16,
-                }}
-              >
-                🛡️
-              </div>
-              <span style={{ fontFamily: font, fontWeight: 700, fontSize: 16, color: colors.textPrimary }}>Cybershield</span>
-            </div>
-            <div style={{ display: 'flex', gap: 4 }}>
-              {navLinks.map((link) => (
-                <button
-                  key={link.id}
-                  type="button"
-                  onClick={() => setPage(link.id)}
-                  style={{
-                    padding: '6px 14px',
-                    borderRadius: 8,
-                    background: page === link.id ? `${colors.cyan400}18` : 'none',
-                    border: `1px solid ${page === link.id ? `${colors.cyan400}44` : 'transparent'}`,
-                    color: page === link.id ? colors.cyan400 : colors.textSecondary,
-                    fontFamily: font,
-                    fontWeight: page === link.id ? 600 : 400,
-                    fontSize: 13,
-                    cursor: 'pointer',
-                    transition: 'all 0.2s',
-                  }}
-                >
-                  {link.label}
-                </button>
-              ))}
-            </div>
-          </div>
-        </nav>
-
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 32px 80px' }}>{pageMap[page] ?? pageMap.home}</div>
       </div>
     </>

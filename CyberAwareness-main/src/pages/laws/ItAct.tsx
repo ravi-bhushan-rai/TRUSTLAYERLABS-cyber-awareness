@@ -79,6 +79,16 @@ export default function ItAct() {
           </article>
           <article className="accordion" data-accordion>
             <button className="accordion-button">
+              <span>Sec 65</span>Source document tampering <b className="accordion-icon">+</b>
+            </button>
+            <div className="accordion-content">
+              <div className="accordion-content-inner">
+                Applies when a person knowingly alters, destroys, conceals, or tampers with computer source documents to cause wrongful loss or facilitate cybercrime.
+              </div>
+            </div>
+          </article>
+          <article className="accordion" data-accordion>
+            <button className="accordion-button">
               <span>Sec 66D</span>Cheating by personation <b className="accordion-icon">+</b>
             </button>
             <div className="accordion-content">
@@ -99,15 +109,131 @@ export default function ItAct() {
           </article>
           <article className="accordion" data-accordion>
             <button className="accordion-button">
-              <span>Sec 67 series</span>Obscene and sexually explicit material <b className="accordion-icon">+</b>
+              <span>Sec 67</span>Obscene material <b className="accordion-icon">+</b>
             </button>
             <div className="accordion-content">
               <div className="accordion-content-inner">
-                Used for publication or transmission of obscene, sexually explicit, or child sexual abuse material,
-                with serious escalation requirements.
+                Used for publication or transmission of obscene electronic content and explicit material that harms public morality.
               </div>
             </div>
           </article>
+          <article className="accordion" data-accordion>
+            <button className="accordion-button">
+              <span>Sec 67A</span>Sexually explicit material <b className="accordion-icon">+</b>
+            </button>
+            <div className="accordion-content">
+              <div className="accordion-content-inner">
+                Covers electronic transmission of sexually explicit material, including revenge porn and sexual exploitation via digital channels.
+              </div>
+            </div>
+          </article>
+          <article className="accordion" data-accordion>
+            <button className="accordion-button">
+              <span>Sec 67B</span>Child sexual abuse material <b className="accordion-icon">+</b>
+            </button>
+            <div className="accordion-content">
+              <div className="accordion-content-inner">
+                Applies to creation, publication, or transmission of child sexual abuse material through electronic systems.
+              </div>
+            </div>
+          </article>
+          <article className="accordion" data-accordion>
+            <button className="accordion-button">
+              <span>Sec 69</span>Interception and decryption <b className="accordion-icon">+</b>
+            </button>
+            <div className="accordion-content">
+              <div className="accordion-content-inner">
+                Supports lawful interception orders, direction to decrypt information, and preservation of digital evidence during investigation.
+              </div>
+            </div>
+          </article>
+          <article className="accordion" data-accordion>
+            <button className="accordion-button">
+              <span>Sec 72</span>Confidentiality breach <b className="accordion-icon">+</b>
+            </button>
+            <div className="accordion-content">
+              <div className="accordion-content-inner">
+                Applies when sensitive personal information is disclosed without consent by a person who has access to it under lawful contract.
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="section-block">
+        <div className="search-panel">
+          <h2 className="section-title">Scam Type → IT Act Mapping</h2>
+          <p className="section-description">Quick reference for which IT Act sections apply to common cyber crimes.</p>
+        </div>
+
+        <div className="accordion-list">
+    <article className="accordion" data-accordion>
+      <button className="accordion-button">
+        <span>66D · 66C · 43</span>UPI fraud / phishing / QR scam <b className="accordion-icon">+</b>
+      </button>
+      <div className="accordion-content">
+        <div className="accordion-content-inner">
+          Sections 66D (cheating by personation), 66C (identity theft), and 43 (unauthorized access / damage)
+          apply to UPI fraud, phishing pages, and QR-code redirect scams.
+        </div>
+      </div>
+    </article>
+    <article className="accordion" data-accordion>
+      <button className="accordion-button">
+        <span>66C · 66D</span>Identity theft / OTP misuse <b className="accordion-icon">+</b>
+      </button>
+      <div className="accordion-content">
+        <div className="accordion-content-inner">
+          Section 66C covers fraudulent use of passwords, OTPs, and digital signatures. Section 66D extends
+          to impersonation used to deceive victims into transferring money or credentials.
+        </div>
+      </div>
+    </article>
+    <article className="accordion" data-accordion>
+      <button className="accordion-button">
+        <span>65 · 66 · 69 · 43</span>Unauthorized access, hacking, tampered systems <b className="accordion-icon">+</b>
+      </button>
+      <div className="accordion-content">
+        <div className="accordion-content-inner">
+          Section 66 / 43 cover unauthorized access and system damage; Section 65 applies to source code
+          tampering; Section 69 supports lawful interception and decryption orders during investigation.
+        </div>
+      </div>
+    </article>
+    <article className="accordion" data-accordion>
+      <button className="accordion-button">
+        <span>72</span>Confidentiality breach / data leakage <b className="accordion-icon">+</b>
+      </button>
+      <div className="accordion-content">
+        <div className="accordion-content-inner">
+          Section 72 applies when sensitive personal data is disclosed without consent by someone who had
+          lawful access — insiders, vendors, or service providers.
+        </div>
+      </div>
+    </article>
+    <article className="accordion" data-accordion>
+      <button className="accordion-button">
+        <span>66E · 67 · 67A</span>Privacy invasion / image abuse <b className="accordion-icon">+</b>
+      </button>
+      <div className="accordion-content">
+        <div className="accordion-content-inner">
+          Section 66E covers capture or transmission of private images; Section 67 targets obscene
+          electronic content; Section 67A applies specifically to sexually explicit material including
+          revenge porn.
+        </div>
+      </div>
+    </article>
+    <article className="accordion" data-accordion>
+      <button className="accordion-button">
+        <span>67B</span>Child sexual abuse material <b className="accordion-icon">+</b>
+      </button>
+      <div className="accordion-content">
+        <div className="accordion-content-inner">
+          Section 67B covers creation, publication, or transmission of child sexual abuse material through
+          any electronic system or network.
+        </div>
+      </div>
+    </article>
         </div>
       </section>
     </main>
