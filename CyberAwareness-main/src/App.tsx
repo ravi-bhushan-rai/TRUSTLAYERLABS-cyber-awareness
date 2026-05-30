@@ -34,6 +34,7 @@ import LawRights from './pages/laws/Rights';
 import LawAwareness from './pages/laws/Awareness';
 import LawPenalties from './pages/laws/Penalties';
 import LawCaseStudy from './pages/laws/CaseStudy';
+import IndianCyberLawPage from './pages/Indian Cyber law/IndianCyberlaw';
 import Quiz from './pages/quiz';
 import QuizPlay from './pages/quiz/Quiz';
 import QuizChallenge from './pages/quiz/Challenge';
@@ -130,6 +131,7 @@ export default function App() {
             <Route path="/laws/awareness" element={<LawAwareness />} />
             <Route path="/laws/penalties" element={<LawPenalties />} />
             <Route path="/laws/case-study" element={<LawCaseStudy />} />
+            <Route path="/indian-cyber-law" element={<IndianCyberLawPage />} />
 
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/quiz/play" element={<QuizPlay />} />
